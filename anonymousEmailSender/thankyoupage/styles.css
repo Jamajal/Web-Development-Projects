@@ -1,0 +1,19 @@
+body{
+  background-image: linear-gradient(45deg, black, rgb(2, 5, 44));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 97vh;
+    color: white;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #020202;
+  border: 5px solid #52b644;
+  border-radius: 15px;
+}

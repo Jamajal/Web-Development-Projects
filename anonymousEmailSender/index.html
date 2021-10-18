@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Anounymous Email Sender</title>
+</head>
+<body>
+    <div>
+        <h1>Anounymous Email Sender</h1>
+        <form action="https://formsubmit.co/leandroliberiomachado@hotmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="campo">
+                <h2>Subject</h2>
+                <input type="text" name="_subject" value="" class="espaco">
+            </div>
+            <div class="campo">
+                <h2>Message</h2>
+                <textarea type="text" name="content" required class="espaco" id="content" wrap="soft"></textarea>
+            </div>
+            <input type="hidden" name="_next" value="localhost:5500/thankyoupage/send.html">
+            <button type="submit" id="botao">Send</button>
+        </form>
+    </div>
+</body>
+</html>
