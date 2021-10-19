@@ -3,6 +3,3 @@ It has a simple interface and you have to insert the email adress
 in the code, because I still don't know how to get it and insert it 
 via Javascript.
 But I'll get there.
-Also I made an page to confirm that the email was send, but I don't have
-an domain to acess it and I didn't use React, because this was just a little
-project to practice some skills.
