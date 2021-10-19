@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+}
+
+button{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to left, black, rgb(54, 68, 78));
+  border: none;
+  border-radius: 50%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+button:focus-within{
+  background: linear-gradient(to right, yellow,red);
+  border: none;
+  color: white;
+  animation-name: botao;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes botao{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.3);
+    box-shadow: 0 0 60px yellow;
+  }
+}
