@@ -17,8 +17,12 @@
 <body>
     <div>
         <h1>Anounymous Email Sender</h1>
-        <form action="https://formsubmit.co/leandroliberiomachado@hotmail.com" method="POST">
+        <form action="" method="POST">
             <input type="hidden" name="_captcha" value="false">
+            <div class="campo">
+                <h2>Email</h2>
+                <input type="text" name="_email" value="" class="espaco">
+            </div>
             <div class="campo">
                 <h2>Subject</h2>
                 <input type="text" name="_subject" value="" class="espaco">
@@ -27,9 +31,9 @@
                 <h2>Message</h2>
                 <textarea type="text" name="content" required class="espaco" id="content" wrap="soft"></textarea>
             </div>
-            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-            <button type="submit" id="botao">Send</button>
+            <button type="submit" id="botao" onclick="Email()">Send</button>
         </form>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
