@@ -25,15 +25,48 @@ button{
   cursor: pointer;
 }
 
-button:focus-within{
+.shine{
   background: linear-gradient(to right, yellow,red);
   border: none;
-  color: white;
   animation-name: botao;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
+  box-shadow: 0 0 60px yellow;
+}
+
+.shineGreen{
+  background: linear-gradient(to right, yellowgreen, rgb(70, 180, 180));
+  border: none;
+  animation-name: botao;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 60px rgb(22, 181, 202);
+}
+
+.shineChaos{
+  background: linear-gradient(to right, purple, black);
+  border: none;
+  animation-name: botao;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 60px rgb(54, 34, 187);
+}
+
+.shineLight{
+  background: linear-gradient(to right, white, rgb(59, 59, 59));
+  border: none;
+  animation-name: botao;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 0 60px whitesmoke;
 }
 
 @keyframes botao{
@@ -42,6 +75,5 @@ button:focus-within{
   }
   100%{
     transform: scale(1.3);
-    box-shadow: 0 0 60px yellow;
   }
 }
